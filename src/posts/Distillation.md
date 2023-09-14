@@ -1,1 +1,0 @@
-Distillation, otherwise known as Knowledge Distillation, is the process of transferring knowledge from a large model to a smaller model. 

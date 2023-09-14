@@ -18,11 +18,11 @@ export default function RootLayout({
   const header = (
     <header>
       <div>
-        <p className="text-3xl underline font-averia">
+        <p className="text-4xl font-averia">
           Miko's Space 
         </p>
         <p>
-        🧙‍♂️ Welcome to my space..
+        🧙‍♂️ Welcome to my space...
         </p>
         <br></br>
       </div>
@@ -33,7 +33,7 @@ export default function RootLayout({
     <footer>
       <div>
         <br></br>
-        <h5 className="text-sky-400">
+        <h5 className="italic text-sky-400">
           Developed by Miko Planas
         </h5>
       </div>

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
+import matter from 'gray-matter';
 
 const getPostContent = (slug: string) => {
     const folder = 'src/posts/';
@@ -7,17 +8,22 @@ const getPostContent = (slug: string) => {
     const new_slug = slug.replaceAll("%20", " ");
     const file = `${folder}${new_slug}.md`;
     const content = fs.readFileSync(file, "utf8");
-    return content;
+    const matterResult = matter(content);
+
+    return matterResult;
 };
 
 const PostPage = (props: any) => {
     // Get slug from dir name's square brackets
     const slug = props.params.slug;
-    const content = getPostContent(slug);
+    const post = getPostContent(slug);
 
     return (
         <div className="prose lg:prose-xl">
-            <Markdown>{content}</Markdown>
+            <h3 className="text-lg text-white">
+                {post.data.title}
+            </h3>
+            <Markdown>{post.content}</Markdown>
         </div>
     )
 }
