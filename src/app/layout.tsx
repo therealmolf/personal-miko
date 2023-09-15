@@ -1,8 +1,15 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Averia_Serif_Libre } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const averia = Averia_Serif_Libre({
+  subsets: ['latin'],
+  weight: "300",
+  display: "swap",
+  variable: '--font-averia'
+})
 
 export const metadata: Metadata = {
   title: 'Miko Planas',
@@ -19,7 +26,7 @@ export default function RootLayout({
     <header>
       <div>
         <p className="text-4xl font-averia">
-          Miko's Space 
+          Miko Planas
         </p>
         <p>
         🧙‍♂️ Welcome to my space...
@@ -42,7 +49,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={averia.className}>
         {header}
         {children}
         {footer}
