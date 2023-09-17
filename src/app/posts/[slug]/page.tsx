@@ -1,6 +1,7 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
+import getPostMetadata from '@/components/getPostMetadata';
 
 const getPostContent = (slug: string) => {
     const folder = 'src/posts/';
@@ -12,6 +13,13 @@ const getPostContent = (slug: string) => {
 
     return matterResult;
 };
+
+export const generateStaticParams = async () => {
+    const posts = getPostMetadata();
+    return posts.map((post) => {
+        slug: post.slug
+    });
+}; 
 
 const PostPage = (props: any) => {
     // Get slug from dir name's square brackets
