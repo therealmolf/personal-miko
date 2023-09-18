@@ -10,3 +10,5 @@ tags:
 ## Where it all started...
 
 Cantabaco, Cantabaco
+
+![Sample picture](/images/Mousepad.jpg)
