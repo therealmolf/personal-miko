@@ -24,24 +24,23 @@ export default function RootLayout({
 
   const header = (
     <header>
-      <div>
+      <div className="p-5 my-7 border-b border-gray-800">
         <p className="text-4xl font-averia">
           Miko Planas
         </p>
         <p>
         🧙‍♂️ Welcome to my space...
         </p>
-        <br></br>
       </div>
     </header>
   )
 
   const footer = (
     <footer>
-      <div>
+      <div className="text-center">
         <br></br>
-        <h5 className="italic text-sky-400">
-          Developed by Miko Planas
+        <h5 className="text-xs text-gray-700">
+          Developed by Miko Planas using Next.js, Tailwind, etc.
         </h5>
       </div>
     </footer>
@@ -50,9 +49,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={averia.className}>
-        {header}
-        {children}
-        {footer}
+          <div className="mx-auto max-w-3xl">
+            {header}
+            {children}
+            {footer}
+          </div>
         </body>
     </html>
   )
