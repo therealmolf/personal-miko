@@ -37,5 +37,13 @@ There are many things to consider:
 ### Results
 ![[Realistic Autonomous Tasks.png]]
 
+### Sample Code
+```python
+
+def pak():
+	pass
+
+```
+
 #### Questions
 * What are other clusters of capabilities evaluation methods? Is there something missing?

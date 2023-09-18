@@ -15,6 +15,14 @@ const PostPreview = (props: PostMetadata) => {
       <p className="text-gray-600">
         {props.subtitle}
         </p>
+      <div className="inline-block text-gray-400">
+        {props.tags.map((prop) => (
+          <li className="inline-block text-xs underline decoration-sky-600 text-gray-500 mr-2" key={prop}>
+            #{prop}
+          </li>
+        )
+        )}
+      </div>
     </div>
 }
 
