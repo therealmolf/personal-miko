@@ -1,10 +1,12 @@
 import fs from 'fs';
+import path from 'path';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetadata from '@/components/getPostMetadata';
 
 const getPostContent = (slug: string) => {
-    const folder = 'src/posts/';
+    // const folder = 'src/posts/';
+    const folder = path.join(process.cwd(), 'src/posts/');
     // %20 is the URL equivalent of spaces
     const new_slug = slug.replaceAll("%20", " ");
     const file = `${folder}${new_slug}.md`;
