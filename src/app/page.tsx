@@ -13,7 +13,10 @@ const HomePage = () => {
   ));
 
   return (
-    <div>{postPreviews}</div>
+    <div>
+      <p className="text-2xl mt-14">Thoughts</p>
+      {postPreviews}
+    </div>
   )
 }
 

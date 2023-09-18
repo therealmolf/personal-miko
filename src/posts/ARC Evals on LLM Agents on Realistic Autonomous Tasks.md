@@ -39,9 +39,9 @@ There are many things to consider:
 
 ### Sample Code
 ```python
-
 def pak():
-	pass
+	bea = "Miko"
+	return bea
 
 ```
 

@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Inter, Averia_Serif_Libre } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,13 +25,26 @@ export default function RootLayout({
 
   const header = (
     <header>
-      <div className="p-5 my-7 border-b border-gray-800">
-        <p className="text-4xl font-averia">
-          Miko Planas
-        </p>
-        <p>
-        🧙‍♂️ Welcome to my space...
-        </p>
+      <div className="flex justify-between py-3 my-7 border-b border-gray-800">
+        <div>
+          <Link href="/">
+            <p className="text-3xl p-1 font-averia">
+              Miko Planas
+            </p>
+          </Link>
+          <p className="text-sm text-slate-500">
+          🧙‍♂️ Welcome to my space...
+          </p>
+        </div>
+
+        <div className="m-5 flex justify-center">
+          <p className="px-2 hover:underline">
+          🛠️ Works
+          </p>
+          <p className="px-2 hover:underline">
+          👤About
+          </p>
+        </div>
       </div>
     </header>
   )
