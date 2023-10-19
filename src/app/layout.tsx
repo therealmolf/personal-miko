@@ -26,23 +26,20 @@ export default function RootLayout({
   const header = (
     <header>
       <div className="flex justify-between py-3 my-7 border-b border-gray-800">
-        <div>
           <Link href="/">
-            <p className="text-3xl p-1 font-averia">
-              Miko Planas
+            <p className="text-2xl font-averia">
+            🧙‍♂️ Miko Planas
             </p>
           </Link>
-          <p className="text-sm text-slate-500">
-          🧙‍♂️ Welcome to my space...
-          </p>
-        </div>
 
-        <div className="m-5 flex justify-center">
-          <p className="px-2 hover:underline">
-          🛠️ Works
+        <div className=" flex justify-between">
+          <p className="text-sm px-1 hover:underline" >
+          🛠️ <a href="https://github.com/therealmolf">GitHub</a>
           </p>
-          <p className="px-2 hover:underline">
-          👤About
+          <p className="text-sm px-1 hover:underline">
+          👤<Link href="resume.pdf">
+            Resume
+            </Link>
           </p>
         </div>
       </div>
