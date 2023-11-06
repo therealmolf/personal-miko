@@ -25,7 +25,7 @@ export default function RootLayout({
 
   const header = (
     <header>
-      <div className="flex justify-between py-3 my-7 border-b border-gray-800">
+      <div className="flex justify-between py-3 my-7 border-b border-gray-400">
           <Link href="/">
             <p className="text-2xl font-averia">
             🧙‍♂️ Miko Planas
@@ -50,7 +50,7 @@ export default function RootLayout({
     <footer>
       <div className="text-center">
         <br></br>
-        <h5 className="text-xs text-gray-700">
+        <h5 className="text-xs text-gray-500">
           Developed by Miko Planas using Next.js, Tailwind, etc.
         </h5>
       </div>
