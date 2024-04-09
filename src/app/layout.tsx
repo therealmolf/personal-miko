@@ -51,7 +51,7 @@ export default function RootLayout({
       <div className="text-center">
         <br></br>
         <h5 className="text-xs text-gray-500">
-          Developed by Miko Planas using Next.js, Tailwind, etc.
+          Developed by Miko Planas using Next.js and Tailwind.
         </h5>
       </div>
     </footer>
