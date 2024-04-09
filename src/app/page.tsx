@@ -16,20 +16,24 @@ const HomePage = () => {
     <div>
       <div className="max-w-lg">
         <p className="text-sm text-black">
-          Hello! I am an autodidactic data aficionado interested in 
+          I am a machine learning consultant/data scientist interested in 
           <a className="text-amber-700 font-bold italic"> improving the quality of human lives</a>
-          . Currently, I am curious about Technical AI Safety (DevInterp), ML Infra, Rationality,
-          Productivity Tools, Resilient Food Systems, Web3 Data Infra, and Software in general.
+          . Particularly, I want reduce AI risks and inequality. I am also curious about rationality, behavioral economics,
+          productivity, food & energy systems, and software in general.
         </p>
           
         <br></br>
 
         <p className="text-sm text-black">
           My background is in Industrial Engineering, but most of my   
-          <a href="https://www.linkedin.com/in/mikhail-franco-planas/" className="text-blue-700 font-bold underline"> previous experiences </a> 
+          <a href="https://www.linkedin.com/in/mikhail-franco-planas/" className="text-blue-700 underline"> experiences </a> 
           revolve around data science and machine learning. 
           I am also a part-time associate editor for 
-          <a href="https://www.deeplearningweekly.com" className="text-blue-700 font-bold underline"> Deep Learning Weekly</a>.
+          <a href="https://www.deeplearningweekly.com" className="text-blue-700 underline"> Deep Learning Weekly</a>.
+          I also write on 
+          <a href="https://medium.com/@planasmiko" className="text-blue-700 underline"> medium </a>
+          and
+          <a href="https://musingsofmiko.substack.com" className="text-blue-700  underline"> substack </a>. 
         </p>
       </div>
 
